@@ -1,0 +1,20 @@
+﻿{
+   "desc": {
+      "message": "Universal music downloader for the most popular sites. You can download music from Vkontakte, OK.ru, Spotify, Deezer, SoundCloud"
+   },
+   "name": {
+      "message": "Universal Music Downloader"
+   },
+   "shortname": {
+      "message": "Uni Music Downloader"
+   },
+   "title": {
+      "message": "All Music Download"
+   },
+   "mtz_btn_title": {
+      "message": "Download"
+   },
+   "share_modal_text": {
+      "message": "If you like what we do, please tell your friends and share the love for Universal Music Downloader"
+   }
+}

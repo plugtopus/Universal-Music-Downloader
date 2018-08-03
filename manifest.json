@@ -1,0 +1,46 @@
+{
+   "background": {
+      "scripts": [ "core/libs/jquery_3.2.1.js", "core/libs/helper.js", "core/_config.js", "core/search-engine.js", "core/background.js", "core/origin/ok.js"]
+   },
+   "browser_action": {
+      "default_icon": "img/128.png",
+      "default_title": "__MSG_title__"
+   },
+   "content_scripts": [ {
+      "js": [ "core/origin/dz.js" ],
+      "matches": [ "*://*.deezer.com/*" ]
+   }, {
+      "js": [ "core/origin/sc.js" ],
+      "matches": [ "*://soundcloud.com/*" ]
+   }, {
+      "js": [ "core/origin/sf.js" ],
+      "matches": [ "*://*.spotify.com/*" ]
+   }, {
+      "js": [ "core/origin/vk.js" ],
+      "matches": [ "*://vk.com/*" ]
+   }, {
+      "css": [ "css/content.css" ],
+      "js": [ "core/libs/jquery_3.2.1.js", "core/libs/helper.js", "core/libs/toastr.min.js", "core/share-modal.js", "core/_config.js", "core/content.js" ],
+      "matches": [ "*://vk.com/*", "*://*.deezer.com/*", "*://*.spotify.com/*", "*://soundcloud.com/*"]
+   }, {
+      "all_frames": true,
+      "js": [ "core/origin/ok.js" ],
+      "matches": [ "http://www.ok.ru/*", "http://ok.ru/*", "https://ok.ru/*", "https://www.ok.ru/*"],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en_US",
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/128.png",
+      "32": "img/32.png",
+      "64": "img/64.png"
+   },
+   "homepage_url": "https://sites.google.com/view/promo-extensions-welcome",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "tabs", "storage", "unlimitedStorage", "downloads", "\u003Call_urls>", "webRequest", "webRequestBlocking", "activeTab", "http://www.ok.ru/*", "https://ok.ru/*", "https://www.ok.ru/*", "http://ok.ru/*"],
+   "short_name": "__MSG_shortname__",
+   "web_accessible_resources": [ "core/origin/ok.js", "img/download.png" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.08.03.1"
+}
